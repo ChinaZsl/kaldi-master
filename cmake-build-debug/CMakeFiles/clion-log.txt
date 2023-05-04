@@ -1,0 +1,47 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -DCMAKE_CXX_COMPILER=/opt/homebrew/Cellar/gcc/13.1.0/bin/gcc-13 -G Ninja -S /Users/zhangshilin/Desktop/kaldi-master -B /Users/zhangshilin/Desktop/kaldi-master/cmake-build-debug
+-- The C compiler identification is AppleClang 14.0.0.14000029
+-- The CXX compiler identification is GNU 13.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Checking whether CXX compiler has -isysroot
+-- Checking whether CXX compiler has -isysroot - yes
+-- Checking whether CXX compiler supports OSX deployment target flag
+-- Checking whether CXX compiler supports OSX deployment target flag - yes
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/homebrew/Cellar/gcc/13.1.0/bin/gcc-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PythonInterp: /Users/zhangshilin/miniconda3/bin/python (found version "3.10.9") 
+-- Running gen_cmake_skeleton.py
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Looking for dgemm_
+-- Looking for dgemm_ - found
+-- Found BLAS: /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/Accelerate.framework  
+-- Looking for cheev_
+-- Looking for cheev_ - found
+-- A library with LAPACK API found.
+CUDA_TOOLKIT_ROOT_DIR not found or specified
+-- Could NOT find CUDA (missing: CUDA_TOOLKIT_ROOT_DIR CUDA_NVCC_EXECUTABLE CUDA_INCLUDE_DIRS CUDA_CUDART_LIBRARY) 
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+CMake Error at cmake/VersionHelper.cmake:11 (string):
+  string sub-command STRIP requires two arguments.
+Call Stack (most recent call first):
+  CMakeLists.txt:167 (get_version)
+
+
+CMake Error at CMakeLists.txt:175 (find_library):
+  Could not find OpenFST_LIBRARY using the following names: fst
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/zhangshilin/Desktop/kaldi-master/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Users/zhangshilin/Desktop/kaldi-master/cmake-build-debug/CMakeFiles/CMakeError.log".
